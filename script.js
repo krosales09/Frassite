@@ -1,16 +1,7 @@
-let carrito = [];
-
-function agregarAlCarrito(producto) {
-    carrito.push(producto);
-    actualizarCarrito();
-}
-
-function actualizarCarrito() {
-    const listaCarrito = document.getElementById("lista-carrito");
-    listaCarrito.innerHTML = "";
-    carrito.forEach(item => {
-        const li = document.createElement("li");
-        li.textContent = item;
-        listaCarrito.appendChild(li);
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        target.scrollIntoView({ behavior: "smooth" });
     });
-}
+});
