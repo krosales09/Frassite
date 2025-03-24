@@ -3,57 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frassité - Frases y Reflexiones</title>
+    <title>Frassité</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
+
+    <!-- Menú de navegación -->
     <header>
-        <h1>Frassité</h1>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#frases">Reflexiones</a></li>
-                <li><a href="#tienda">Tienda</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li class="submenu">
+                    <a href="#">¿Qué necesitas? ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="#motivacion">Motivación</a></li>
+                        <li><a href="#sentirme-bien">Sentirme bien</a></li>
+                        <li><a href="#crecimiento">Crecimiento personal</a></li>
+                        <li><a href="#aprender">Aprender</a></li>
+                    </ul>
+                </li>
+                <li><a href="#siguenos">Síguenos</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
             </ul>
         </nav>
     </header>
-    
+
+    <!-- Secciones -->
     <section id="inicio">
-        <h2>Bienvenido a Frassité</h2>
-        <p>Explora reflexiones y frases inspiradoras.</p>
+        <h1>Bienvenido a Frassité</h1>
+        <p>Un espacio para compartir frases y reflexiones.</p>
     </section>
-    
-    <section id="frases">
-        <h2>Frases Destacadas</h2>
-        <p>"La vida es un eco, lo que envías vuelve."</p>
+
+    <section id="noticias">
+        <h2>Noticias</h2>
+        <p>Últimas actualizaciones sobre nuestras actividades y novedades.</p>
     </section>
-    
-    <section id="tienda">
-        <h2>Tienda</h2>
-        <div class="producto">
-            <p>Polera con frase</p>
-            <button onclick="agregarAlCarrito('Polera con frase')">Añadir al carrito</button>
-        </div>
-        <div class="producto">
-            <p>Taza personalizada</p>
-            <button onclick="agregarAlCarrito('Taza personalizada')">Añadir al carrito</button>
-        </div>
+
+    <section id="motivacion">
+        <h2>Motivación</h2>
+        <p>Encuentra frases que te impulsen a seguir adelante.</p>
     </section>
-    
+
+    <section id="sentirme-bien">
+        <h2>Sentirme bien</h2>
+        <p>Reflexiones para tu bienestar emocional.</p>
+    </section>
+
+    <section id="crecimiento">
+        <h2>Crecimiento personal</h2>
+        <p>Desarrollo y aprendizaje continuo.</p>
+    </section>
+
+    <section id="aprender">
+        <h2>Aprender</h2>
+        <p>Expande tu conocimiento con nuestras reflexiones.</p>
+    </section>
+
+    <section id="siguenos">
+        <h2>Síguenos</h2>
+        <p>Conéctate con nosotros en redes sociales.</p>
+    </section>
+
     <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Escríbenos a lineafrassite@gmail.com</p>
+        <h2>Contáctanos</h2>
+        <p>Escríbenos para cualquier consulta o sugerencia.</p>
     </section>
-    
-    <div class="carrito">
-        <h3>Carrito de Compras</h3>
-        <ul id="lista-carrito"></ul>
-    </div>
-    
-    <footer>
-        <p>&copy; 2025 Frassité. Todos los derechos reservados.</p>
-    </footer>
+
 </body>
 </html>
