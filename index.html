@@ -3,27 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frassité</title>
+    <title>Frassité - Frases y Reflexiones</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Frassité</h1>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Frases</a></li>
-                <li><a href="#">Tienda</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#frases">Frases</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <section>
+    
+    <section id="inicio">
         <h2>Bienvenido a Frassité</h2>
-        <p>Un espacio donde las palabras cobran vida.</p>
+        <p>Explora reflexiones y frases inspiradoras.</p>
     </section>
+    
+    <section id="frases">
+        <h2>Frases Destacadas</h2>
+        <p>"La vida es un eco, lo que envías vuelve."</p>
+    </section>
+    
+    <section id="tienda">
+        <h2>Tienda</h2>
+        <div class="producto">
+            <p>Polera con frase</p>
+            <button onclick="agregarAlCarrito('Polera con frase')">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <p>Taza personalizada</p>
+            <button onclick="agregarAlCarrito('Taza personalizada')">Añadir al carrito</button>
+        </div>
+    </section>
+    
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Escríbenos a contacto@frassite.com</p>
+    </section>
+    
+    <div class="carrito">
+        <h3>Carrito de Compras</h3>
+        <ul id="lista-carrito"></ul>
+    </div>
+    
     <footer>
-        <p>&copy; 2025 Frassité - Todos los derechos reservados</p>
+        <p>&copy; 2025 Frassité. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
