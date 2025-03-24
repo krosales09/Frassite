@@ -1,0 +1,30 @@
+let carrito = [];
+
+function agregarAlCarrito(producto) {
+    carrito.push(producto);
+    actualizarCarrito();
+}
+
+function actualizarCarrito() {
+    const listaCarrito = document.getElementById("lista-carrito");
+    listaCarrito.innerHTML = "";
+    carrito.forEach((producto, index) => {
+        const item = document.createElement("li");
+        item.textContent = producto;
+        const botonEliminar = document.createElement("button");
+        botonEliminar.textContent = "Eliminar";
+        botonEliminar.onclick = () => eliminarDelCarrito(index);
+        item.appendChild(botonEliminar);
+        listaCarrito.appendChild(item);
+    });
+}
+
+function eliminarDelCarrito(index) {
+    carrito.splice(index, 1);
+    actualizarCarrito();
+}
+
+function vaciarCarrito() {
+    carrito = [];
+    actualizarCarrito();
+}
